@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/Users/rauljordan/Desktop/Code/React/react-list-filter/example";
+/******/ 	__webpack_require__.p = "/Users/rauljordan/Desktop/Code/React/kynplex-component/example";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);

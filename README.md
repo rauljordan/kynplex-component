@@ -2,6 +2,13 @@
 
 A completely testable and linted skeleton for building React components for Kynplex, Inc.
 
+## Setting Up
+
+Make sure you have node.js installed in your system and navigate to the project directory and run
+
+```
+npm install
+```
 
 ## Dependencies
 
