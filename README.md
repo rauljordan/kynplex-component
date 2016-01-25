@@ -2,11 +2,6 @@
 
 A completely testable and linted skeleton for building React components for Kynplex, Inc.
 
-## Installation
-
-```
-npm install kynplex-component-skeleton
-```
 
 ## Dependencies
 
@@ -18,7 +13,7 @@ npm install kynplex-component-skeleton
 npm run dev
 ```
 
-Go to localhost:9000 in your browser 
+Go to localhost:9000 in your browser
 
 ## Usage (ES6)
 

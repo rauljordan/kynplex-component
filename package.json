@@ -1,5 +1,5 @@
 {
-  "name": "kynplex-component-skeleton",
+  "name": "kynplex-component",
   "version": "0.4.1",
   "description": "A completely testable scaffold for building React components for Kynplex",
   "main": "lib/Main.js",
@@ -16,11 +16,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:rauljordan/kynplex-component-skeleton.git"
+    "url": "git@github.com:rauljordan/kynplex-component.git"
   },
   "scripts": {
     "dev": "webpack --watch --inline",
-    "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports && browserify ./lib/ListFilter.js -o ./build/kynplex-component-skeleton.js --transform browserify-global-shim --standalone ListFilter && uglifyjs ./build/kynplex-component-skeleton.js --compress --mangle --output ./build/kynplex-component-skeleton.min.js --source-map ./build/kynplex-component-skeleton.min.js.map",
+    "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports && browserify ./lib/ListFilter.js -o ./build/kynplex-component.js --transform browserify-global-shim --standalone ListFilter && uglifyjs ./build/kynplex-component.js --compress --mangle --output ./build/kynplex-component.min.js --source-map ./build/kynplex-component.min.js.map",
     "test": "karma start",
     "test:ci": "watch 'npm run test' src/"
   },
