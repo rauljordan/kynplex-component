@@ -29,15 +29,13 @@ var config = {
         test: /\.json$/,
         loader: "json-loader"
       }
-    ]
+    ],
+    noParse: /node_modules\/json-schema\/lib\/validate\.js/
   },
   resolve: {
-    root: path.resolve('./src'),
-    modulesDirectories: [
-      'bower_components',
-      'node_modules'
-    ],
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.jsx', '.js', '.json'],
+    root: path.resolve(__dirname),
+    modulesDirectories: ['node_modules']
   },
   node: {
     console: 'empty',

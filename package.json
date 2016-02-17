@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "awesomplete": "1.0.0",
+    "cheerio": "node_modules/cheerio",
     "json-loader": "^0.5.4",
     "promise-polyfill": "2.1.0",
     "requests": "^0.1.7"

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { isUri } from 'valid-url';
-import { request } from 'request';
+import request from 'request';
 import { cheerio } from 'cheerio';
 
 export default class Scraper extends React.Component {
@@ -24,6 +24,7 @@ export default class Scraper extends React.Component {
     request(input.value, (error, response, html) => {
       if (!error && response.statusCode === 200) {
         const $ = cheerio.load(html);
+
         console.log($('div').length);
       }
     });
