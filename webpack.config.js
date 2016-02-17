@@ -24,12 +24,26 @@ var config = {
         test: /(\.jsx|\.js)$/,
         loader: "eslint-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loader: "json-loader"
       }
     ]
   },
   resolve: {
     root: path.resolve('./src'),
-    extensions: ['', '.js', '.jsx']
+    modulesDirectories: [
+      'bower_components',
+      'node_modules'
+    ],
+    extensions: ['', '.js', '.jsx'],
+  },
+  node: {
+    console: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
   }
 };
 

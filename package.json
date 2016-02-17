@@ -19,14 +19,16 @@
     "url": "git@github.com:rauljordan/kynplex-component.git"
   },
   "scripts": {
-    "dev": "webpack --watch --inline",
-    "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports && browserify ./lib/ListFilter.js -o ./build/kynplex-component.js --transform browserify-global-shim --standalone ListFilter && uglifyjs ./build/kynplex-component.js --compress --mangle --output ./build/kynplex-component.min.js --source-map ./build/kynplex-component.min.js.map",
+    "dev": "webpack --watch --inline --display-error-details",
+    "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports && browserify ./lib/CoolButton.js -o ./build/kynplex-component.js --transform browserify-global-shim --standalone CoolButton && uglifyjs ./build/kynplex-component.js --compress --mangle --output ./build/kynplex-component.min.js --source-map ./build/kynplex-component.min.js.map",
     "test": "karma start",
     "test:ci": "watch 'npm run test' src/"
   },
   "dependencies": {
     "awesomplete": "1.0.0",
-    "promise-polyfill": "2.1.0"
+    "json-loader": "^0.5.4",
+    "promise-polyfill": "2.1.0",
+    "requests": "^0.1.7"
   },
   "devDependencies": {
     "babel-cli": "6.1.18",
@@ -43,6 +45,7 @@
     "eslint": "1.4.3",
     "eslint-loader": "1.0.0",
     "eslint-plugin-react": "3.4.1",
+    "json-loader": "^0.5.4",
     "karma": "0.13.10",
     "karma-chai": "0.1.0",
     "karma-chai-plugins": "0.6.0",
