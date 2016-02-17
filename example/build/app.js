@@ -19697,6 +19697,8 @@
 	
 	var _request = __webpack_require__(163);
 	
+	var _request2 = _interopRequireDefault(_request);
+	
 	var _cheerio = __webpack_require__(329);
 	
 	var Scraper = (function (_React$Component) {
@@ -19721,7 +19723,7 @@
 	      /**
 	      * Scrape and pass in result to onSuccess prop
 	      */
-	      (0, _request.request)(input.value, function (error, response, html) {
+	      (0, _request2['default'])(input.value, function (error, response, html) {
 	        if (!error && response.statusCode === 200) {
 	          var $ = _cheerio.cheerio.load(html);
 	
