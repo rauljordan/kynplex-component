@@ -7,6 +7,9 @@ import { cheerio } from 'cheerio';
 
 export default class Scraper extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
 	scrape(event) {
     event.preventDefault();
     let input = this.refs.urlInput;
@@ -21,9 +24,7 @@ export default class Scraper extends React.Component {
     request(input.value, (error, response, html) => {
       if (!error && response.statusCode === 200) {
         const $ = cheerio.load(html);
-        const numDivs = $('div').length;
-
-        console.log(numDivs);
+        console.log($('div').length);
       }
     });
 

@@ -19702,10 +19702,10 @@
 	var Scraper = (function (_React$Component) {
 	  _inherits(Scraper, _React$Component);
 	
-	  function Scraper() {
+	  function Scraper(props) {
 	    _classCallCheck(this, Scraper);
 	
-	    _get(Object.getPrototypeOf(Scraper.prototype), 'constructor', this).apply(this, arguments);
+	    _get(Object.getPrototypeOf(Scraper.prototype), 'constructor', this).call(this, props);
 	  }
 	
 	  _createClass(Scraper, [{
@@ -19724,9 +19724,7 @@
 	      (0, _request.request)(input.value, function (error, response, html) {
 	        if (!error && response.statusCode === 200) {
 	          var $ = _cheerio.cheerio.load(html);
-	          var numDivs = $('div').length;
-	
-	          console.log(numDivs);
+	          console.log($('div').length);
 	        }
 	      });
 	
